@@ -1,3 +1,94 @@
-body {
-  margin: 0;
+.logo {
+  display: initial;
+  flex-direction: row;
+  align-items: baseline;
+}
+#bloc_page {
+  width: 900px;
+  margin: auto;
+}
+nav {
+  width: auto;
+  text-align: left;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 600px;
+}
+nav li {
+  padding-right: 20px;
+}
+nav a {
+  font-size: 1em;
+}
+#table {
+  display: initial;
+}
+#hebergements {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.case1 {
+  width: 150px;
+  height: 150px;
+  background-color: antiquewhite;
+  order: 8;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.case2 {
+  width: 150px;
+  height: 150px;
+  background-color: seagreen;
+  order: 2;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.case3 {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  order: 3;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.case4 {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  order: 4;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.case5 {
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  order: 5;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.case6 {
+  width: 150px;
+  height: 150px;
+  background-color: magenta;
+  order: 6;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

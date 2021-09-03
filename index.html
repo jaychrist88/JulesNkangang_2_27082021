@@ -8,37 +8,61 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="">Hébergements</a></li>
-          <li><a href="">Activités</a></li>
-          <li><a href="">S'inscrire</a></li>
-        </ul>
-      </nav>
+      <div id="bloc_page">
+        <nav>
+          <ul>
+            <li><a href="">Hébergements</a></li>
+            <li><a href="">Activités</a></li>
+            <li><a href="">S'inscrire</a></li>
+          </ul>
+        </nav>
 
-      <div></div>
+          <img src="logo/mini_reservia@3x.png" alt="Logo Reservia" class="logo" />
+          <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong><br>
+          En plein centre ville ou en pleine nature </p>
+
+        <form method="POST" action="traitement.php">
+          <input type="checkbox" >
+          <input type="search" name="search" class="searchInput" placeholder="Marseille, France">
+          <button class="searchButton" type="button" aria-label="Search"><span class="searchText">Rechercher</span><i class="fas fa-search searchIcon"></i></button>
+          <p>
+            
+          </p>
+        </form>
+
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
     </header>
 
-    <section>
-      <article>
-        <h1>Hébergements à Marseille</h1>
-        <div></div>
-      </article>
-      <aside>
-        <h1>Les plus populaires</h1>
-        <div></div>
-      </aside>
-    </section>
+      <section>
+        <article>
+          <section id="table">
+            <div id="hebergements">
+              <div class="case1"></div>
+              <div class="case2"></div>
+              <div class="case3"></div>
+              <div class="case4"></div>
+              <div class="case5"></div>
+              <div class="case6"></div>
+            </div>
+          </section>
+        </article>
+        <aside>
+          <h3>Les plus populaires</h3>
+          <div></div>
+        </aside>
+      </section>
 
-    <section>
-      <article>
-        <h1>Activités à Marseille</h1>
-        <div></div>
-      </article>
-    </section>
+      <section>
+        <article>
+          <h3>Activités à Marseille</h3>
+          <div></div>
+        </article>
+      </section>
 
-    <footer>
-      <div></div>
-    </footer>
+      <footer>
+        <div></div>
+      </footer>
+    </div>
   </body>
 </html>
