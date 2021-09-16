@@ -1,23 +1,19 @@
 /* ---police du site---- */
 @font-face {
   font-family: "Raleway";
-  src: url("static/Raleway-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Raleway-thin";
-  src: url("static/Raleway-Thin.ttf");
+  src: url("Raleway/static/Raleway-Regular.ttf");
 }
 
 h1, h2, h3, h4, h5, h6, a 
 {
   font-family: "Raleway";
-  font-weight: bold;
+  src: url("Raleway/static/Raleway-ExtraBold.ttf");
 }
 
 p {
   font-family: "Raleway";
 }
+
 /* ----------------- */
 
 }
