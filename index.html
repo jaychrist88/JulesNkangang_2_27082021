@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="searchicons8.png" />
     <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/c69d84bd8b.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c69d84bd8b.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -25,10 +29,14 @@
           <div class="navheader">
             <ul>
               <li>
-                <a href="#Hébergements">Hébergements</a>
+                <div class="menuhebergements">
+                  <a href="#Hébergements">Hébergements</a>
+                </div>
               </li>
               <li>
-                <a href="#Activités">Activités</a>
+                <div class="menuactivites">
+                  <a href="#Activités">Activités</a>
+                </div>
               </li>
               <li>
                 <div class="inscrire">S'inscrire</div>
@@ -55,6 +63,7 @@
           placeholder="Marseille, France"
         />
         <!--bouton rechercher-->
+
         <button class="searchbutton" type="button" aria-label="search">
           <span class="searchtext">Rechercher</span>
         </button>
@@ -73,7 +82,7 @@
           <div class="textfilter">Économique</div>
         </a>
 
-        <a href="" class="buttonfilter">
+        <a href="" class="buttonfilterfam">
           <div class="iconfilter">
             <i class="fas fa-child fa-lg"></i>
           </div>
@@ -87,7 +96,7 @@
           <div class="textfilter">Romantique</div>
         </a>
 
-        <a href="" class="buttonfilter">
+        <a href="" class="buttonfilteranim">
           <div class="iconfilter">
             <i class="fas fa-dog fa-lg"></i>
           </div>
@@ -95,7 +104,7 @@
         </a>
       </div>
       <div id="remarque">
-        <i class="fas fa-info"></i> &nbsp;
+        <i class="fas fa-info"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </article>
