@@ -1,7 +1,6 @@
 /* -- paramètre de page ---- */
 body {
-  max-width: 98%;
-  margin: auto;
+  max-width: 1440px;
 }
 
 /* ---police du site---- */
@@ -24,7 +23,7 @@ a,
 .inscrire,
 header {
   font-family: "Raleway";
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* ---  ligne entete de page ---- */
@@ -32,6 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 header ul {
   color: #0065fc;
@@ -39,6 +39,7 @@ header ul {
 ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 header ul li a:hover {
   color: #0065fc;
@@ -47,8 +48,23 @@ a {
   text-decoration: none;
   color: black;
 }
+.menuactivites a {
+  color:black;
+  font-weight: normal;
+}
+.menuhebergements a
+{
+  color: #0065FC;
+  font-weight: normal;
+  padding: 2rem;
+  border-top: 2px solid #0065FC;
+}
+li {
+  margin: 10px;
+}
 .inscrire {
   padding-left: 0px;
+}
 }
 nav ul {
   justify-content: space-between;
@@ -102,7 +118,9 @@ form {
   margin-right: 40px;
   margin-bottom: 12px;
 }
-.buttonfilter {
+.buttonfilter,
+.buttonfilterfam,
+.buttonfilteranim {
   height: 50px;
   border: 2px solid #f2f2f2;
   display: flex;
@@ -113,11 +131,13 @@ form {
   align-items: center;
   transition: 0.3s;
 }
-.buttonfilter:hover {
+.buttonfilter:hover,
+.buttonfilterfam: :hover, .buttonfilteranim: :hover {
   background-color: #deebff;
   box-shadow: 3px 3px 8px #f2f2f2;
   transition: 0.3s;
 }
+
 .textfilter {
   font-size: 1em;
   display: flex;
@@ -147,12 +167,16 @@ form {
 #remarque i {
   font-size: 4mm;
   color: #0065fc;
-  border: #000;
-  border-radius: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 4px;
-  padding-left: 4px;
+  border-radius: 100%;
+  padding: 6px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid gainsboro;
+  box-sizing: content-box;
+  text-align: center;
+}
+#remarque p {
+  padding-left: 10px;
 }
 
 /* section hebergements et populaires */
@@ -245,7 +269,7 @@ form {
 #pluspopulaires {
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 32%;
+  width: 34%;
   padding: 20px;
 }
 .hebergements_et_pop {
@@ -395,18 +419,35 @@ footer {
 }
 
 /*----responsive smartphones----*/
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 600px) {
   /* ---  ligne entete de page ---- */
+  
+  body {
+    width: 100%;
+  }
   header {
     margin: 0;
-    width: 100%;
   }
   .entete {
     display: grid;
     padding-top: 5%;
   }
-  header nav {
+  .navheader {
     margin-right: 0;
+  }
+  .menuactivites a {
+    color:black;
+    font-weight: normal;
+    padding: 2rem;
+    border-bottom: 2px solid gainsboro;
+  }
+  .menuhebergements a
+  {
+    color: #0065FC;
+    font-weight: normal;
+    padding: 2rem;
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
   }
   .inscrire {
     position: absolute;
@@ -421,8 +462,7 @@ footer {
     margin-top: 2px;
   }
   header ul li {
-    margin-left: 0;
-    padding: 10px 45px 5px 10px;
+    margin-left: -10px;
   }
   header ul li a:hover {
     border-bottom: solid #0065fc;
@@ -431,7 +471,20 @@ footer {
   }
 
   /* ----formulaire de recherche----*/
+  
   .searchbutton {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  }
+  .searchtext 
+  {
     display: none;
   }
 
@@ -442,13 +495,17 @@ footer {
   .filters {
     margin-bottom: 10px;
   }
-  .buttonfilter {
+  .buttonfilter,
+  .buttonfilterfam {
     width: 50%;
     margin-bottom: 10px;
   }
-  familial {
+  .buttonfilteranim {
+    width: 60%;
+  }
+  .buttonfilterfam {
     position: absolute;
-    margin: 35px 0 0 55%;
+    margin: 35px 0 22% 55%;
     width: 35%;
   }
 
@@ -460,14 +517,16 @@ footer {
 
   /* section hebergements à marseille */
   #hébergement {
-    width: 100%;
+    width: auto;
+    
     background-color: white;
     order: 2;
-    width: 100%;
-    margin: 0%;
+    margin: 0;
     padding: 0;
+    display: grid;
   }
   #conteneur_figure {
+    width: auto;
     display: flex;
     flex-direction: column;
   }
@@ -485,7 +544,7 @@ footer {
     font-size: 14px;
   }
   #pluspopulaires {
-    width: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
     order: 1;
