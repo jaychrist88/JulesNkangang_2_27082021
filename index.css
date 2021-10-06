@@ -1,7 +1,7 @@
 /* -- paramètre de page ---- */
 body {
-  max-width: 1440px;
-  margin: auto;
+  max-width: 1880px;
+
   padding: 1rem;
 }
 
@@ -319,7 +319,7 @@ input {
   box-shadow: 0 5px 16px #f2f2f2;
 }
 .hotelpop img {
-  margin: 5px 10px 15px 2px;
+  margin: 1px 10px 1px 1px;
 }
 .hotelpop:hover {
   /* L'image est zoomé au survol */
@@ -332,7 +332,7 @@ input {
   cursor: pointer;
   float: left;
   width: 40%;
-  height: 92%;
+  height: 98%;
   border-radius: 15px 0 0 15px;
   margin: 2px 10px 2px 0px;
   object-fit: cover;
@@ -435,14 +435,13 @@ footer {
 .blockFooter {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   width: 100%;
 }
-
 .interieurblockFooter {
   width: auto;
   margin-left: 5rem;
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 .footerTitre {
   display: block;
@@ -487,9 +486,7 @@ footer {
 }
 
 @media screen and (max-width: 764px) {
-  .blockFooter {
-    display: flex;
-    flex-direction: column;
+  body {
   }
   #Activites {
     display: flex;
@@ -499,7 +496,6 @@ footer {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
-
     width: 100%;
     height: auto;
   }
@@ -523,6 +519,13 @@ footer {
     width: 100%;
     margin-top: 15px;
   }
+  .blockFooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .interieurblockFooter {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -531,6 +534,13 @@ footer {
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: column;
+  }
+  .blockFooter {
+    display: flex;
+    justify-content: center;
+  }
+  .interieurblockFooter {
+    margin-right: 5rem;
   }
 }
 
@@ -557,7 +567,7 @@ footer {
 }
 
 /*----responsive smartphones----*/
-@media (min-width: 320px) and (max-width: 460px) {
+@media (min-width: 380px) and (max-width: 460px) {
   /* ---  ligne entete de page ---- */
 
   body {
@@ -607,7 +617,6 @@ footer {
 
   nav {
     display: flex;
-
     align-items: center;
     width: 100%;
     margin-top: 20px;
@@ -720,5 +729,50 @@ footer {
     border-color: transparent;
     box-shadow: 0 5px 16px #0000002e;
     margin-top: -12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #logo img {
+    margin: 0 0 0 10px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .navheader {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+  }
+  .entete {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menuhebergements {
+    padding: 1rem;
+  }
+  .inscrire {
+    padding-left: 15px;
+  }
+  .searchbutton i {
+    display: block;
+  }
+  .searchtext {
+    display: none;
+  }
+  #Activites {
+    width: 100%;
+  }
+  footer {
+    background-color: white;
+    width: 100%;
+  }
+  .blockFooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }
