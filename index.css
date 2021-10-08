@@ -1,8 +1,8 @@
 /* -- paramètre de page ---- */
 body {
-  max-width: 1880px;
-
-  padding: 1rem;
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px;
 }
 
 /* ---police du site---- */
@@ -565,9 +565,32 @@ footer {
     align-items: center;
   }
 }
-
 /*----responsive smartphones----*/
 @media (min-width: 380px) and (max-width: 460px) {
+  /* -----------bloc filtres------- */
+  #blocfilters {
+    display: grid;
+  }
+  .filters {
+    margin-bottom: 10px;
+  }
+  .buttonfilter,
+  .buttonfilterfam {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .buttonfilteranim {
+    width: 60%;
+  }
+  .buttonfilterfam {
+    position: absolute;
+    margin: 45px 0 100px 55%;
+    width: auto;
+  }
+}
+
+/*----responsive smartphones----*/
+@media (min-width: 319px) and (max-width: 460px) {
   /* ---  ligne entete de page ---- */
 
   body {
@@ -635,27 +658,6 @@ footer {
   }
   .searchtext {
     display: none;
-  }
-
-  /* -----------bloc filtres------- */
-  #blocfilters {
-    display: grid;
-  }
-  .filters {
-    margin-bottom: 10px;
-  }
-  .buttonfilter,
-  .buttonfilterfam {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-  .buttonfilteranim {
-    width: 60%;
-  }
-  .buttonfilterfam {
-    position: absolute;
-    margin: 45px 0 100px 55%;
-    width: auto;
   }
 
   /* section hebergements et populaires */
@@ -732,7 +734,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 319px) {
   #logo img {
     margin: 0 0 0 10px;
   }
