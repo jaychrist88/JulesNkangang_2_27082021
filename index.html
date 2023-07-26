@@ -8,6 +8,10 @@
       src="https://kit.fontawesome.com/c69d84bd8b.js"
       crossorigin="anonymous"
     ></script>
+    <script
+src="https://www.paypal.com/sdk/js?client-id=AdQPISOigQosftMUswoUJTdK3XaSyZiz1hPbVFZiFSuqPJ93r38Z2NBXKqTbIFxvvl4e-C0lkm759IFb&currency=EUR&components=messages"
+data-namespace="PayPalSDK">
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Reservia" />
     <meta
@@ -15,7 +19,18 @@
       content="Projet site web Reservia Open Classrooms"
     />
   </head>
-
+<!-- Dans votre code, mettez à jour dynamiquement
+data-pp-amount en le remplaçant par le prix ou le montant du panier.
+Par exemple, data-pp-amount="89,99"
+pour un produit de 89,99 €.
+-->
+<div
+    data-pp-message
+    data-pp-style-layout="text"
+    data-pp-style-logo-type="inline"
+    data-pp-style-text-color="black"
+    data-pp-amount="ENTER_VALUE_HERE">
+</div>
   <body>
     <header>
       <!--logo-->
